@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Griffy|Raleway|Spicy+Rice');
+
+body {
+    margin: 0;
+    font-family: 'Griffy', cursive;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTitle {
+    font-size: 150px;
+    user-select: none;
+    text-shadow: -4px -3px 6px rgba(150, 150, 150, 1);
+}
+
+main {
+    text-align: center;
+    background: deepskyblue;
+}
