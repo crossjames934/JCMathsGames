@@ -16,6 +16,7 @@ class Player {
         this.dir = 0;
         this.speed = width * 0.005;
         this.frame = 0;
+        this.holding = false;
     }
 
     show() {

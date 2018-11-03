@@ -1,5 +1,6 @@
 let player;
 let numBoxes = [];
+let machines = [];
 
 function setup() {
     const smallerDim = window.innerHeight < window.innerWidth ? window.innerHeight : window.innerWidth;
@@ -7,14 +8,20 @@ function setup() {
     cnv.parent("canvasContainer");
     textAlign(CENTER);
     player = new Player();
+    machines.push(new Machine("add", width * 0.2, height / 2));
+    machines.push(new Machine("divide", width * 0.6, height / 2));
     for (let i = 0; i < 10; i++) {
-        numBoxes.push(new NumBox(i, random(width), random(height)));
+        numBoxes.push(new NumBox(i, random(width * 0.95), random(height * 0.95)));
     }
 }
 
 function draw() {
     background(173,255,47);
     showBoxes(false);
+    for (let i = 0; i < machines.length; i++) {
+        machines[i].show();
+        machines[i].update();
+    }
     player.update();
     player.show();
     showBoxes(true);
@@ -39,4 +46,8 @@ function showBoxes(isHeld) {
             numBoxes[i].update();
         }
     }
+}
+
+function collision(a, b) {
+    return a.x + a.w > b.x && a.x < b.x + b.w && a.y + a.h > b.y && a.y < b.y + b.h;
 }
