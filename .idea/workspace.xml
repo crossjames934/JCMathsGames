@@ -1,7 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69556dd2-92ed-4679-92bd-8a5825ee7a0f" name="Default Changelist" comment="" />
+    <list default="true" id="69556dd2-92ed-4679-92bd-8a5825ee7a0f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/JCMathsGames.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Griffy/Griffy-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Griffy/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Raleway/Raleway-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Spicy_Rice/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Spicy_Rice/SpicyRice-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gameStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meteorBlaster/ast1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meteorBlaster/ast2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meteorBlaster/ast3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meteorBlaster/asteroid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meteorBlaster/mbStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meteorBlaster/meteorBlaster.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meteorBlaster/meteorBlasterSketch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meteorBlaster/question.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/numBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/numCrunchSketch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/numberCrunchers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/player.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile006.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile007.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile008.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile009.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile010.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile011.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -59,8 +115,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/numberCrunchers/numberCrunchers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="210">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -108,6 +164,9 @@
       <find>Question</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -143,6 +202,7 @@
     <option name="width" value="1440" />
     <option name="height" value="834" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -154,16 +214,6 @@
             <path>
               <item name="JCMathsGames" type="b2602c69:ProjectViewProjectNode" />
               <item name="JCMathsGames" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JCMathsGames" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JCMathsGames" type="462c0819:PsiDirectoryNode" />
-              <item name="meteorBlaster" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JCMathsGames" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JCMathsGames" type="462c0819:PsiDirectoryNode" />
-              <item name="numberCrunchers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -236,18 +286,17 @@
       <updated>1541095958588</updated>
       <workItem from="1541095959792" duration="2455000" />
       <workItem from="1541099670502" duration="8483000" />
-      <workItem from="1541259769016" duration="5754000" />
+      <workItem from="1541259769016" duration="5998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16692000" />
+    <option name="totallyTimeSpent" value="16936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -259,7 +308,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -361,8 +410,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/numberCrunchers/numberCrunchers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="210">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
