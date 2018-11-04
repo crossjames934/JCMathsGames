@@ -17,6 +17,8 @@ class Player {
         this.speed = width * 0.005;
         this.frame = 0;
         this.holding = false;
+        this.pastX = [];
+        this.pastY = [];
     }
 
     show() {
@@ -28,9 +30,15 @@ class Player {
         this.move();
         this.walkAnim();
         this.boxIn();
+        this.keepTrack();
     }
 
     move() {
+        if (keyIsDown(16)) {
+            this.speed = width * 0.01;
+        } else {
+            this.speed = width * 0.005;
+        }
         if (keyIsDown(37)) {
             this.dir = 3;
             this.x -= this.speed;
@@ -93,5 +101,12 @@ class Player {
     boxIn() {
         this.x = constrain(this.x, 0, width - this.w);
         this.y = constrain(this.y, 0, height - this.h);
+    }
+  
+    keepTrack() {
+        this.pastX.unshift(this.x);
+        this.pastY.unshift(this.y);
+        if (this.pastX.length > 10) this.pastX.pop();
+        if (this.pastY.length > 10) this.pastY.pop();
     }
 }

@@ -15,7 +15,7 @@ function setup() {
 
 function draw() {
     background(0);
-    for (let i = 0; i < asteroids.length; i++) {
+    for (let i = asteroids.length-1; i >= 0; i--) {
         asteroids[i].show();
         asteroids[i].update();
         if (asteroids[i].expended) asteroids.splice(i, 1);
@@ -42,5 +42,5 @@ function keyPressed() {
 
 function game() {
     q.show();
-    // q.do(); replaced with global keypressed function
+    q.do();
 }

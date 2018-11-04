@@ -29,7 +29,11 @@ class NumBox {
     }
 
     grab() {
-        this.held = !this.held;
+        if (this.held) {
+          player.holding = this.held = false;
+        } else if (!player.holding) {
+          player.holding = this.held = true;
+        }
     }
 
     // Move to an empty area on the map

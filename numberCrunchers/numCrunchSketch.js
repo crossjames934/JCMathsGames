@@ -17,18 +17,24 @@ function setup() {
 
 function draw() {
     background(173,255,47);
-    showBoxes(false);
+    showBoxes(false); // show first ones-not held
     for (let i = 0; i < machines.length; i++) {
         machines[i].show();
         machines[i].update();
     }
     player.update();
     player.show();
-    showBoxes(true);
+    showBoxes(true); // show last the one being held
 }
 
 function keyPressed() {
     if (keyCode === 32 || keyCode === 13) {
+        // Check first if player is able to insert numBox into machine if it's holding one
+        if (player.holding) {
+          for (let i = 0; i < machines.length; i++) {
+            machines[i].checkIfCanInsert();
+          }
+        }
         for (let i = 0; i < numBoxes.length; i++) {
             if (dist(numBoxes[i].x, numBoxes[i].y, player.x, player.y) <= numBoxes[i].w) {
                 numBoxes[i].grab();
