@@ -66,9 +66,10 @@ class Machine {
           player.y + player.h / 2, 
           this.tube.x + this.tube.w / 2,
           this.tube.y
-          ) < player.w) 
+          ) < player.w)
         {
             this.swallowBox();
+            return true;
         }
     }
   
@@ -76,6 +77,8 @@ class Machine {
         for (let i = 0; i < numBoxes.length; i++) {
             if (numBoxes[i].held) {
                 player.holding = numBoxes[i].held = false;
+                numBoxes[i].beingSwallowed = true;
+                numBoxes[i].x = this.x + this.w / 2 - numBoxes[i].w / 2;
                 break;
             }
         }

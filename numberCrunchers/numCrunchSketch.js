@@ -10,13 +10,14 @@ function setup() {
     player = new Player();
     machines.push(new Machine("add", width * 0.2, height / 2));
     machines.push(new Machine("divide", width * 0.6, height / 2));
-    for (let i = 0; i < 10; i++) {
-        numBoxes.push(new NumBox(i, random(width * 0.95), random(height * 0.95)));
+    for (let i = 0; i < 20; i++) {
+        numBoxes.push(new NumBox(i * 10, random(width * 0.95), random(height * 0.95)));
     }
 }
 
 function draw() {
     background(173,255,47);
+    // coolBg();
     showBoxes(false); // show first ones-not held
     for (let i = 0; i < machines.length; i++) {
         machines[i].show();
@@ -27,12 +28,29 @@ function draw() {
     showBoxes(true); // show last the one being held
 }
 
+// let bgCols = [];
+
+// for (let i = 0; i < 400; i++) {
+//   bgCols = random(100);
+// }
+
+// function coolBg() {
+//     const scl = width / 20;
+//     noStroke();
+//     for (let i = 0; i < 20; i++) {
+//         for (let j = 0; j < 20; j++) {
+//             fill(0, 0, 0, bgCols[i * 20 + j]);
+//             rect(i * scl, j * scl, scl, scl);
+//         }
+//     }
+// }
+
 function keyPressed() {
     if (keyCode === 32 || keyCode === 13) {
         // Check first if player is able to insert numBox into machine if it's holding one
         if (player.holding) {
           for (let i = 0; i < machines.length; i++) {
-            machines[i].checkIfCanInsert();
+            if (machines[i].checkIfCanInsert()) return;
           }
         }
         for (let i = 0; i < numBoxes.length; i++) {
