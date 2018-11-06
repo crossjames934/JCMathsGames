@@ -16,6 +16,9 @@ class NumBox {
         this.held = false;
         this.moveToEmpty();
         this.beingSwallowed = false;
+        this.swallowFrame = 0;
+        this.swallowSpeed = 1;
+        this.process = null; // Will be changed by the machine it's inserted into, set back to null when done
         this.color = colors[floor(random(colors.length))];
     }
 
@@ -39,8 +42,9 @@ class NumBox {
             this.x = player.x;
             this.y = player.y;
         }
+        // MACHINE SWALLOWING NUMBERS
         if (this.beingSwallowed) {
-            this.y += width / 600;
+            this.enterMachine();
         }
     }
 
@@ -60,5 +64,24 @@ class NumBox {
                 this.y = random(height - this.h);
             }
         }
+    }
+
+    // Change the 5 to the number stored in the machine. 5 for testing purposes
+    enterMachine() {
+        this.y += width / 600 * this.swallowSpeed;
+        this.swallowFrame++;
+        if (this.swallowFrame > 20 && this.process !== null) {
+            this.n = this.process(this.n, 3);
+            this.process = null;
+        }
+        if (this.swallowFrame > 60) {
+            this.swallowSpeed = 4;
+        }
+        if (this.swallowFrame > 110) {
+            this.beingSwallowed = false;
+            this.swallowFrame = 0;
+            this.swallowSpeed = 1;
+        }
+        console.log(this.beingSwallowed);
     }
 }

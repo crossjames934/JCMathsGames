@@ -10,7 +10,7 @@ class Machine {
           y: this.y - this.h * 0.3,
           w: this.w * 0.4,
           h: this.h * 0.3
-        }
+        };
         switch (type) {
             case "add":
                 this.process = add;
@@ -79,6 +79,7 @@ class Machine {
                 player.holding = numBoxes[i].held = false;
                 numBoxes[i].beingSwallowed = true;
                 numBoxes[i].x = this.x + this.w / 2 - numBoxes[i].w / 2;
+                numBoxes[i].process = this.process;
                 break;
             }
         }
