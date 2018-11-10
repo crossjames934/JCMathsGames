@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Shadows+Into+Light');
+
+body {
+    background: rgb(158, 216, 247);
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+input {
+    position: fixed;
+    display: none;
+    width: 50vw;
+    height: 10vh;
+    left: 25vw;
+    bottom: 10vh;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #000033;
+    border: #3A5683 5px solid;
+    border-radius: 10px;
+    background-color: #95AED6;
+    z-index: 100;
+}
+
+#gameTitle {
+    position: fixed;
+    font-size: 10vw;
+    font-family: 'Shadows Into Light', cursive;
+    width: 100vw;
+    height: 500px;
+    top: calc(50vh - 250px);
+    text-align: center;
+    user-select: none;
+    color: black;
+    z-index: 101;
+}
+
+h2 {
+    position: fixed;
+    font-size: 5vw;
+    font-family: 'Shadows Into Light', cursive;
+    width: 100vw;
+    bottom: 10vh;
+    text-align: center;
+    user-select: none;
+    color: black;
+}
+
+#titleScreen {
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+#menuScreen {
+    position: fixed;
+    display: none;
+    background: #111133;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    max-width: 100%;
+    color: white;
+}
+
+#instructions {
+    margin-top: 40vh;
+}
