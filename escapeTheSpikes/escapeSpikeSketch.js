@@ -6,6 +6,8 @@ const hideInput = () => { hide("userInput") };
 const showInput = () => { show("userInput") };
 
 let stage = 0;
+let character;
+let question;
 
 /*
 
@@ -22,12 +24,23 @@ function setup() {
     const cnv = createCanvas(window.innerWidth, window.innerHeight);
     cnv.parent("canvasContainer");
     hideInput();
+    hide("menuScreen");
     hills.generated = false;
+    character = new Character();
+    question = new Question();
+    textSize(30); // change to proportion of window size
+    textAlign(CENTER);
 }
 
 function draw() {
     background(158, 216, 247);
-    // hills();
+    hills();
+    if (stage === 3) game();
+}
+
+function windowResized() {
+    location.reload(); // Refreshes page on window change size, temporary solution
+    // setup();
 }
 
 function keyPressed() {
