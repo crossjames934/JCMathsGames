@@ -28,6 +28,7 @@ function setup() {
     question = question || new Question();
     textSize(30); // change to proportion of window size
     textAlign(CENTER);
+    setting.img = loadImage("sprites/stoneBricks.jpg");
 }
 
 function draw() {

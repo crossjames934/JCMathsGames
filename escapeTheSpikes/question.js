@@ -1,5 +1,9 @@
 class Question {
     constructor() {
+        this.newQuestion();
+    }
+
+    newQuestion() {
         this.numX = ceil(random(12));
         this.numY = ceil(random(12));
         this.numR = this.numX * this.numY;
@@ -15,6 +19,6 @@ class Question {
 
     correct() {
         character.move();
-        question = new Question();
+        this.newQuestion();
     }
 }
