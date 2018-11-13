@@ -23,11 +23,9 @@ STAGES
 function setup() {
     const cnv = createCanvas(window.innerWidth, window.innerHeight);
     cnv.parent("canvasContainer");
-    hideInput();
-    hide("menuScreen");
     hills.generated = false;
-    character = new Character();
-    question = new Question();
+    character = character || new Character();
+    question = question || new Question();
     textSize(30); // change to proportion of window size
     textAlign(CENTER);
 }
@@ -39,8 +37,10 @@ function draw() {
 }
 
 function windowResized() {
-    location.reload(); // Refreshes page on window change size, temporary solution
-    // setup();
+    // location.reload(); // Refreshes page on window change size, temporary solution
+    hills.generated = false;
+    character.render();
+    setup();
 }
 
 function keyPressed() {

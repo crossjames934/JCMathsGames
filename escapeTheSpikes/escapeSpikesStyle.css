@@ -63,22 +63,22 @@ h2 {
     color: black;
 }
 
-#titleScreen {
+.screen {
     position: fixed;
-    display: block;
     width: 100vw;
     height: 100vh;
     max-width: 100%;
+}
+
+#titleScreen {
+    display: block;
 }
 
 #menuScreen {
     position: fixed;
     display: none;
     background: #111133;
-    width: 100vw;
-    height: 100vh;
     top: 0;
-    max-width: 100%;
     color: white;
     opacity: 0;
     animation: appear 2s ease-out 0s forwards paused
@@ -95,4 +95,8 @@ h2 {
 
 #instructions {
     margin-top: 40vh;
+}
+
+#deathScreen {
+    background: black;
 }

@@ -28,9 +28,15 @@ function spikes() {
     fill(255);
     const len = 20;
     let spikeH = spikes.progress * height / 1500;
+    if (spikeH >= height * 0.67 - character.h) {
+        console.log("death");
+    }
     for (let i = 0; i < len; i++) {
         let x = width * 0.3 + (i / len) * (width * 0.4);
         rect(x, height * 0.05, width * 0.01, spikeH);
     }
-    spikes.progress++;
+    // Spikes stop descending when they've reached the floor
+    if (spikeH < height * 0.67) {
+        spikes.progress++;
+    }
 }

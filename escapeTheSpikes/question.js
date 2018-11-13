@@ -12,4 +12,9 @@ class Question {
         let q = `${this.numX} x ${this.numY} =`;
         text(q, width / 2, height * 0.15);
     }
+
+    correct() {
+        character.move();
+        question = new Question();
+    }
 }
