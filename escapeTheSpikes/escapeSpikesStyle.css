@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Shadows+Into+Light|Special+Elite');
 
 body {
     background: rgb(158, 216, 247);
@@ -84,19 +84,38 @@ h2 {
     animation: appear 2s ease-out 0s forwards paused
 }
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 #instructions {
     margin-top: 40vh;
 }
 
 #deathScreen {
     background: black;
+    opacity: 0;
+    top: 0;
+    animation: show 2s ease-out 0s forwards paused;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 4vw;
+    max-font-size: 20px;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.8;
+    }
 }

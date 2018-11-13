@@ -1,6 +1,7 @@
 class Question {
     constructor() {
         this.newQuestion();
+        this.answered = 0;
     }
 
     newQuestion() {
@@ -19,6 +20,7 @@ class Question {
 
     correct() {
         character.move();
+        this.answered++;
         this.newQuestion();
     }
 }

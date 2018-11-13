@@ -17,6 +17,7 @@ STAGES
 1 - instruction screen
 2 - menu screen
 3 - game
+4 - death
 
  */
 
@@ -34,7 +35,7 @@ function setup() {
 function draw() {
     background(158, 216, 247);
     hills();
-    if (stage === 3) game();
+    if (stage === 3 || stage === 4) game();
 }
 
 function windowResized() {

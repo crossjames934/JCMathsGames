@@ -15,5 +15,12 @@ function transitionToStart() {
     hide("menuScreen");
     hide("titleScreen");
     hide("gameTitle");
+
     stage = 3;
+}
+
+function transitionToDeath() {
+    show("deathScreen");
+    document.getElementById("deathScreen").style.animationPlayState = "running";
+    stage = 4;
 }

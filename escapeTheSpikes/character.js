@@ -31,7 +31,7 @@ class Character {
     }
   
     move() {
-        this.targetX += width * 0.05;
+        this.targetX = width * 0.3 + (question.answered+1) * (setting.interiorWidth / 8);
     }
 
     life() {
@@ -48,5 +48,9 @@ class Character {
         if (this.frame < this.deathSprites.length - 1) {
             this.frame += 0.25;
         }
+    }
+
+    victory() {
+
     }
 }

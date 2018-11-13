@@ -21,4 +21,13 @@ function userSubmit() {
             // Bzzzz!
         }
     }
+    // Death
+    if (stage === 4) {
+        hide("deathScreen");
+        hideInput();
+        show("titleScreen");
+        show("gameTitle");
+        gameTitle.style.animationPlayState = "paused";
+        stage = 0;
+    }
 }
