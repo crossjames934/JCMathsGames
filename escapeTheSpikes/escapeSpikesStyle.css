@@ -74,6 +74,30 @@ h2 {
     display: block;
 }
 
+#optionsScreen {
+    opacity: 0;
+    top: 0;
+    background: #000066;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    z-index: 103;
+    animation: visible 1s ease-out 0s forwards paused;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.operationBtn {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: x-large;
+    background: deepskyblue;
+    border-radius: 5px;
+}
+
+.selected {
+    background: gold !important;
+}
+
 #menuScreen {
     position: fixed;
     display: none;
@@ -81,7 +105,7 @@ h2 {
     top: 0;
     color: white;
     opacity: 0;
-    animation: appear 2s ease-out 0s forwards paused
+    animation: appear 2s ease-out 0s forwards paused;
 }
 
 #instructions {
@@ -102,6 +126,19 @@ h2 {
     max-font-size: 20px;
 }
 
+#victoryScreen {
+    background: darkturquoise;
+    color: black;
+    opacity: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    animation: emerge 2s ease-out 0s forwards paused;
+    font-family: 'Shadows Into Light', cursive;
+}
+
 @keyframes appear {
     0% {
         opacity: 0;
@@ -117,5 +154,23 @@ h2 {
     }
     100% {
         opacity: 0.8;
+    }
+}
+
+@keyframes emerge {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes visible {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

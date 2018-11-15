@@ -21,11 +21,30 @@
             <p>Type the phrase "OPTIONS" into the box below and hit enter to make choices</p>
         </div>
     </div>
+    <div id="optionsScreen" class="screen">
+        <h1>OPTIONS</h1>
+        <div>
+            <button class="operationBtn">Addition</button>
+            <button class="operationBtn">Subtraction</button>
+            <button class="operationBtn selected">Multiplication</button>
+            <button class="operationBtn">Division</button>
+        </div>
+    </div>
     <div id="deathScreen" class="screen">
         <div>
             <h1>GAME OVER!</h1>
             <p>You were unable to escape in time</p>
             <p>Hit enter to go back and try again</p>
+        </div>
+    </div>
+    <div id="victoryScreen" class="screen">
+        <div>
+            <h1>WELL DONE!</h1>
+            <p>You managed to escape in time and survive!</p>
+            <p id="pointsForDifficulty"></p>
+            <p id="pointsForSpeedBonus"></p>
+            <p id="totalPoints"></p>
+            <p>Hit enter to go back and play again</p>
         </div>
     </div>
     <input id="userInput" placeholder="TYPE HERE">
@@ -34,6 +53,8 @@
     <script src="transitions.js"></script>
     <script src="hills.js"></script>
     <script src="game.js"></script>
+    <script src="spikes.js"></script>
+    <script src="calculatePoints.js"></script>
     <script src="question.js"></script>
     <script src="character.js"></script>
     <script src="escapeSpikeSketch.js"></script>

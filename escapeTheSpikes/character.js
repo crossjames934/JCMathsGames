@@ -13,13 +13,13 @@ class Character {
         this.deathSprites = deathSprites;
         this.victorySprite = loadImage("sprites/victory.png");
         this.frame = 0; // which sprite is showing
-        this.questionsAnswered = 0; // 8 to win
         this.alive = true;
+        this.victorious = false;
     }
 
     // called when window resized;
     render() {
-        this.x = width * 0.3;
+        this.x = width * 0.3 + (question.answered) * ((width * 0.4) / 8);
         this.y = height * 0.62;
         this.w = width * 0.05;
         this.h = height * 0.1;
@@ -35,11 +35,15 @@ class Character {
     }
 
     life() {
-        image(this.sprites[floor(this.frame)], this.x, this.y, this.w, this.h);
-        if (this.x < this.targetX) {
-            this.x += width * 0.002;
-            this.frame+=0.5;
-            if (this.frame >= this.sprites.length) this.frame = 0;
+        if (question.answered < 8 || this.x < this.targetX) {
+            image(this.sprites[floor(this.frame)], this.x, this.y, this.w, this.h);
+            if (this.x < this.targetX) {
+                this.x += width * 0.002;
+                this.frame+=0.5;
+                if (this.frame >= this.sprites.length) this.frame = 0;
+            }
+        } else {
+            this.victory();
         }
     }
 
@@ -51,6 +55,11 @@ class Character {
     }
 
     victory() {
-
+        image(this.victorySprite, this.x, this.y, this.w, this.h);
+        if (!this.victorious) {
+            calculatePoints();
+            transitionToWin();
+            this.victorious = true;
+        }
     }
 }

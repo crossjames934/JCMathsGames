@@ -1,6 +1,7 @@
 function hills() {
     if (hills.generated) {
-        image(hills.picture, 0, 0, width, height);
+        let hillsHeight = stage >= 3 ? height / 2 : height;
+        image(hills.picture, 0, 0, width, hillsHeight);
     } else {
         // Save picture of hills as a single image to save computing power
         const points = 100;
@@ -23,6 +24,7 @@ function hills() {
             for (let j = 0; j < points; j++) {
                 vertex(width / points * j, yHeight[j] * (height / 2) + fractionOfHeight * height);
             }
+            vertex(width, yHeight[yHeight.length-1] * (height / 2) + fractionOfHeight * height);
             vertex(width, height);
             vertex(0, height);
             endShape();
