@@ -5,21 +5,25 @@ function selectOption(option) {
             show("additionOptions");
             hide("subtractionOptions");
             hide("multiplicationOptions");
+            question.operation = "+";
             break;
         case "subtractionBtn":
             show("additionOptions");
             show("subtractionOptions");
             hide("multiplicationOptions");
+            question.operation = "-";
             break;
         case "multiplicationBtn":
             show("multiplicationOptions");
             hide("additionOptions");
             hide("subtractionOptions");
+            question.operation = "*";
             break;
         case "divisionBtn":
             show("multiplicationOptions");
             hide("additionOptions");
             hide("subtractionOptions");
+            question.operation = "/";
             break;
     }
 }

@@ -2,6 +2,7 @@ class Question {
     constructor() {
         this.newQuestion();
         this.answered = 0;
+        this.operation = "*";
     }
 
     newQuestion() {
@@ -15,6 +16,7 @@ class Question {
         rect(width * 0.4, height * 0.1, width * 0.2, height * 0.1);
         fill(255);
         let q = `${this.numX} x ${this.numY} =`;
+        if (this.answered === 8) q = "YAY!";
         text(q, width / 2, height * 0.15);
     }
 

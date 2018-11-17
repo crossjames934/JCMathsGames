@@ -9,7 +9,6 @@ const showInput = () => { show("userInput") };
 let stage = 0;
 let character;
 let question;
-let operation = "*";
 
 /*
 
