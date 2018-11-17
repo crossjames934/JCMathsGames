@@ -24,10 +24,25 @@
     <div id="optionsScreen" class="screen">
         <h1>OPTIONS</h1>
         <div>
-            <button class="operationBtn">Addition</button>
-            <button class="operationBtn">Subtraction</button>
-            <button class="operationBtn selected">Multiplication</button>
-            <button class="operationBtn">Division</button>
+            <button id="additionBtn" class="operationBtn" onclick="selectOption('additionBtn')">Addition</button>
+            <button id="subtractionBtn" class="operationBtn" onclick="selectOption('subtractionBtn')">Subtraction</button>
+            <button id="multiplicationBtn" class="operationBtn selected" onclick="selectOption('multiplicationBtn')">Multiplication</button>
+            <button id="divisionBtn" class="operationBtn" onclick="selectOption('divisionBtn')">Division</button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="center">
+            <div id="additionOptions" class="specificOptions">
+                <label for="digitsX">Number of digits for first number</label>
+                <input class="numInput" id="digitsX" type="number" value="3" min="1" max="5">
+                <br>
+                <label for="digitsY">Number of digits for second number</label>
+                <input class="numInput" id="digitsY" type="number" value="3" min="1" max="5">
+            </div>
+        </div>
+        <div>
+            <h2>Type 'start' into the input field to begin</h2>
         </div>
     </div>
     <div id="deathScreen" class="screen">
@@ -56,6 +71,7 @@
     <script src="spikes.js"></script>
     <script src="calculatePoints.js"></script>
     <script src="question.js"></script>
+    <script src="options.js"></script>
     <script src="character.js"></script>
     <script src="escapeSpikeSketch.js"></script>
 </body>

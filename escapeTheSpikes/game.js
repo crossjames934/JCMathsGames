@@ -12,6 +12,13 @@ function setting() {
         // Ground
         fill(30);
         rect(0, height / 2, width, height / 2);
+        // Shadow
+        fill(20);
+        beginShape();
+        vertex(width / 4, height / 2);
+        vertex(width / 4, height * 0.8);
+        vertex(width / 8, height / 2);
+        endShape(CLOSE);
         // Building
         fill(50);
         rect(width / 4, height * 0.02, width / 2, height * 0.7);
@@ -22,11 +29,14 @@ function setting() {
                 image(setting.img, width / 4 + i * scl, height * 0.02 + j * scl, scl, scl);
             }
         }
-        fill(90);
         // Interior
+        fill(90);
         rect(width * 0.3, height * 0.05, setting.interiorWidth, height * 0.67);
         // Exit
         rect(width * 0.69, height * 0.52, width * 0.06, height * 0.2);
+        // Carpet
+        fill(40, 0, 0);
+        rect(width * 0.3, height * 0.67, width * 0.45, height * 0.05);
         setting.picture = get();
         setting.generated = true;
     }

@@ -8,11 +8,8 @@ function transitionToMenu() {
 }
 
 function transitionToOptions() {
-    let operationButtons = document.getElementsByClassName("operationBtn");
-    for (let i = 0; i < operationButtons.length; i++) {
-        // operationButtons[i]
-    }
     show("optionsScreen");
+    hide("gameTitle");
     document.getElementById("optionsScreen").style.animationPlayState = "running";
     stage = 2;
 }

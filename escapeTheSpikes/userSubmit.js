@@ -1,7 +1,12 @@
 function userSubmit() {
     let content = inputBox.value;
     inputBox.value = "";
-    if (stage === 0) transitionToMenu();
+    // Easter egg for script kiddies
+    if (/('\s?OR\s?1\s?=\s?1)|(<script>)/gi.test(content)) {
+        return alert("tut tut tut...");
+    }
+    // Start of app
+    if (stage === 0) return transitionToMenu();
     // Menu options etc
     if (stage === 1) {
         if (/start/gi.test(content)) {
@@ -9,6 +14,7 @@ function userSubmit() {
         } else if (/option/gi.test(content)) {
             transitionToOptions();
         }
+        return;
     }
     // Actual game
     if (stage === 3 && question.answered < 8) {
@@ -22,11 +28,13 @@ function userSubmit() {
             // Incorrect answer
             // Bzzzz!
         }
+        return;
     }
     // Death
     if (stage === 4) {
         hide("deathScreen");
         restartGame();
+        return;
     }
     // Victory
     if (stage === 5) {

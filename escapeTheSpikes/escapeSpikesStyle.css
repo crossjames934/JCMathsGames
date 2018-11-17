@@ -8,7 +8,7 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-input {
+#userInput {
     position: fixed;
     display: none;
     width: 50vw;
@@ -70,6 +70,11 @@ h2 {
     max-width: 100%;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+}
+
 #titleScreen {
     display: block;
 }
@@ -80,7 +85,6 @@ h2 {
     background: #000066;
     color: white;
     font-family: 'Shadows Into Light', cursive;
-    z-index: 103;
     animation: visible 1s ease-out 0s forwards paused;
     justify-content: center;
     align-items: center;
@@ -92,10 +96,29 @@ h2 {
     font-size: x-large;
     background: deepskyblue;
     border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.operationBtn:hover {
+    background: #00ffff;
 }
 
 .selected {
     background: gold !important;
+}
+
+.specificOptions {
+    min-width: 50vw;
+    background: #95AED6;
+    color: black;
+    padding: 20px;
+    font-size: x-large;
+}
+
+.numInput {
+    font-size: x-large;
+    border: 3px inset #3A5683;
 }
 
 #menuScreen {
@@ -118,7 +141,7 @@ h2 {
     top: 0;
     animation: show 2s ease-out 0s forwards paused;
     color: red;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     font-family: 'Special Elite', cursive;
@@ -131,7 +154,7 @@ h2 {
     color: black;
     opacity: 0;
     top: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     font-size: 2vw;
