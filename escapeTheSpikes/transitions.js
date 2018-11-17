@@ -2,7 +2,7 @@ function transitionToMenu() {
     hide("titleScreen");
     show("menuScreen");
     gameTitle.style.animationPlayState = "running";
-    document.getElementById("menuScreen").style.animationPlayState = "running";
+    docGet("menuScreen").style.animationPlayState = "running";
     showInput();
     stage = 1;
 }
@@ -10,7 +10,7 @@ function transitionToMenu() {
 function transitionToOptions() {
     show("optionsScreen");
     hide("gameTitle");
-    document.getElementById("optionsScreen").style.animationPlayState = "running";
+    docGet("optionsScreen").style.animationPlayState = "running";
     stage = 2;
 }
 
@@ -23,12 +23,12 @@ function transitionToStart() {
 
 function transitionToDeath() {
     show("deathScreen");
-    document.getElementById("deathScreen").style.animationPlayState = "running";
+    docGet("deathScreen").style.animationPlayState = "running";
     stage = 4;
 }
 
 function transitionToWin() {
     show("victoryScreen");
-    document.getElementById("victoryScreen").style.animationPlayState = "running";
+    docGet("victoryScreen").style.animationPlayState = "running";
     stage = 5;
 }

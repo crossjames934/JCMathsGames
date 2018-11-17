@@ -16,9 +16,9 @@ function userSubmit() {
         }
         return;
     }
+    if (stage === 2 && /start/gi.test(content)) return transitionToStart();
     // Actual game
     if (stage === 3 && question.answered < 8) {
-        console.log(content);
         // Make new boolean "isCorrect" so we can do different things for division etc
         if (content === "z" || content.match(/\d+/gi)[0] === question.numR.toString()) {
             // Correct answer

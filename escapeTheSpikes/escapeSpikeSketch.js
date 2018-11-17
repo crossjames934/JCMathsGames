@@ -1,7 +1,8 @@
-const inputBox = document.getElementById("userInput");
-const gameTitle = document.getElementById("gameTitle");
-const hide = id => { document.getElementById(id).style.display = "none" };
-const show = id => { document.getElementById(id).style.display = "block" };
+const docGet = id => document.getElementById(id);
+const inputBox = docGet("userInput");
+const gameTitle = docGet("gameTitle");
+const hide = id => { docGet(id).style.display = "none" };
+const show = id => { docGet(id).style.display = "block" };
 const hideInput = () => { hide("userInput") };
 const showInput = () => { show("userInput") };
 
@@ -35,7 +36,7 @@ function setup() {
     character = character || new Character();
     textSize(30); // change to proportion of window size
     textAlign(CENTER);
-    transitionToOptions();
+    // transitionToOptions();
 }
 
 function draw() {

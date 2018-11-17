@@ -91,6 +91,29 @@ h2 {
     display: none;
 }
 
+#notPossibleMessage {
+    background: rgba(150, 0, 0, 100);
+    display: none;
+    font-size: xx-large;
+    position: fixed;
+    width: 200px;
+    height: 150px;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 100px);
+    opacity: 1;
+    pointer-events: none;
+    animation: vanish 2s linear 200ms forwards
+}
+
+@keyframes vanish {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .operationBtn {
     font-family: "Noto Sans JP", sans-serif;
     font-size: x-large;
@@ -114,6 +137,10 @@ h2 {
     color: black;
     padding: 20px;
     font-size: x-large;
+}
+
+#additionOptions {
+    display: none;
 }
 
 .numInput {
@@ -160,6 +187,10 @@ h2 {
     font-size: 2vw;
     animation: emerge 2s ease-out 0s forwards paused;
     font-family: 'Shadows Into Light', cursive;
+}
+
+#startInstruction {
+    font-size: 25px;
 }
 
 @keyframes appear {
