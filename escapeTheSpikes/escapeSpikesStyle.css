@@ -139,7 +139,7 @@ h2 {
     font-size: x-large;
 }
 
-#additionOptions {
+#additionOptions, #timesTable, #timesTableLabel {
     display: none;
 }
 

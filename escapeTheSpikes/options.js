@@ -32,6 +32,20 @@ function addSelectedClass(element) {
     docGet(element).classList.add("selected");
 }
 
+function chooseTimesTable() {
+    if (docGet("specificTimesTableCheck").checked) {
+        show("timesTable");
+        show("timesTableLabel");
+        hide("limitY");
+        hide("limitYLabel");
+    } else {
+        hide("timesTable");
+        hide("timesTableLabel");
+        show("limitY");
+        show("limitYLabel");
+    }
+}
+
 function negcheck(isTick = false) {
     // will check if second number has more digits than first, which will tick negative numbers allowed
     let checkState = docGet("negativeAllowed").checked;
