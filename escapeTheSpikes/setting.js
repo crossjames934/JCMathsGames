@@ -1,10 +1,3 @@
-function game() {
-    setting();
-    character.show();
-    spikes();
-    question.show();
-}
-
 function setting() {
     if (setting.generated) {
         image(setting.picture, 0, 0, width, height);
@@ -23,10 +16,11 @@ function setting() {
         fill(50);
         rect(width / 4, height * 0.02, width / 2, height * 0.7);
         const tiles = 10;
-        const scl = (width / 2) / tiles;
+        const xScl = (width / 2) / tiles;
+        const yScl = (height * 0.7) / tiles;
         for (let i = 0; i < tiles; i++) {
-            for (let j = 0; j < tiles - 2; j++) {
-                image(setting.img, width / 4 + i * scl, height * 0.02 + j * scl, scl, scl);
+            for (let j = 0; j < tiles; j++) {
+                image(setting.img, width / 4 + i * xScl, height * 0.02 + j * yScl, xScl, yScl);
             }
         }
         // Interior
@@ -39,5 +33,14 @@ function setting() {
         rect(width * 0.3, height * 0.67, width * 0.45, height * 0.05);
         setting.picture = get();
         setting.generated = true;
+    }
+}
+
+function roof() {
+    fill(100, 120, 30);
+    rect(width / 4, 0, width / 2, height * 0.05);
+    const limit = 7;
+    for (let i = 0; i < limit; i++) {
+        image(roof.img, width / 4 + i * (width / 2 / limit), 0, (width / 2 / limit), height * 0.05);
     }
 }

@@ -1,5 +1,5 @@
 function selectOption(option) {
-    addSelectedClass(option);
+    addSelectedClass(option, false);
     switch (option) {
         case "additionBtn":
             show("additionOptions");
@@ -28,9 +28,26 @@ function selectOption(option) {
     }
 }
 
-function addSelectedClass(element) {
+function selectDifficulty(difficulty) {
+    addSelectedClass(difficulty, true);
+    switch (difficulty) {
+        case "easy":
+            question.difficulty = 3;
+            break;
+        case "medium":
+            question.difficulty = 2;
+            break;
+        case "hard":
+            question.difficulty = 1;
+            break;
+    }
+}
+
+function addSelectedClass(element, isDifficulty) {
     let operationButtons = document.getElementsByClassName("operationBtn");
-    for (let i = 0; i < operationButtons.length; i++) {
+    let init = isDifficulty ? 0 : 3;
+    let limit = isDifficulty ? 3 : operationButtons.length;
+    for (let i = init; i < limit; i++) {
         operationButtons[i].classList.remove("selected");
     }
     docGet(element).classList.add("selected");
@@ -42,11 +59,13 @@ function chooseTimesTable() {
         show("timesTableLabel");
         hide("limitY");
         hide("limitYLabel");
+        // question.timesTable = Number(docGet("timesTable").value);
     } else {
         hide("timesTable");
         hide("timesTableLabel");
         show("limitY");
         show("limitYLabel");
+        // question.timesTable = null;
     }
 }
 

@@ -9,18 +9,23 @@ function userSubmit() {
     if (stage === 0) return transitionToMenu();
     // Menu options etc
     if (stage === 1) {
-        if (/start/gi.test(content)) {
+        if (content.toLowerCase() === "s") {
             transitionToStart();
-        } else if (/option/gi.test(content)) {
+        } else if (content.toLowerCase() === "o") {
             transitionToOptions();
         }
         return;
     }
-    if (stage === 2 && /start/gi.test(content)) return transitionToStart();
+    if (stage === 2 && /s/gi.test(content)) {
+        question.prepareOptions();
+        question.newQuestion(); // Overwrite the one generated at start of app
+        return transitionToStart();
+    }
     // Actual game
     if (stage === 3 && question.answered < 8) {
         // Make new boolean "isCorrect" so we can do different things for division etc
-        if (content === "z" || content.match(/\d+/gi)[0] === question.numR.toString()) {
+        let digitMatch = content.match(/-?\d+/gi);
+        if (content === "z" || (digitMatch !== null && digitMatch[0] === question.answer.toString() )) {
             // Correct answer
             // PING!
             question.correct();

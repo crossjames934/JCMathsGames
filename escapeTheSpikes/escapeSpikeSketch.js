@@ -31,6 +31,7 @@ function setup() {
     hills.generated = false;
     setting.interiorWidth = width * 0.4;
     setting.img = loadImage("sprites/stoneBricks.jpg");
+    roof.img = loadImage("sprites/roof.png");
     question = question || new Question();
     character = character || new Character();
     textSize(30); // change to proportion of window size
@@ -42,6 +43,14 @@ function draw() {
     background(158, 216, 247);
     hills();
     if (stage >= 3) game();
+}
+
+function game() {
+    setting();
+    character.show();
+    spikes();
+    roof();
+    question.show();
 }
 
 function windowResized() {

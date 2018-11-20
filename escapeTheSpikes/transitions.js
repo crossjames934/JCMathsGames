@@ -15,6 +15,7 @@ function transitionToOptions() {
 }
 
 function transitionToStart() {
+    hide("optionsScreen");
     hide("menuScreen");
     hide("titleScreen");
     hide("gameTitle");

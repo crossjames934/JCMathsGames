@@ -8,6 +8,10 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+button:focus, input:focus {
+    outline: 0;
+}
+
 #userInput {
     position: fixed;
     display: none;
@@ -83,6 +87,8 @@ h2 {
     opacity: 0;
     top: 0;
     background: #000066;
+    background: linear-gradient(to right, #000066, #95AED6);
+    background: -moz-linear-gradient(to right, #000066, #95AED6);
     color: white;
     font-family: 'Shadows Into Light', cursive;
     animation: visible 1s ease-out 0s forwards paused;

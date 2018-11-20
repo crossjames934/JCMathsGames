@@ -17,14 +17,19 @@
             <p>The longer you take the closer the spikes will get.</p>
             <p>Will you escape in time?</p>
             <br>
-            <p>Type the phrase "START" into the box below and hit enter to start</p>
-            <p>Type the phrase "OPTIONS" into the box below and hit enter to make choices</p>
+            <p>Type "S" into the box below and hit enter to START</p>
+            <p>Type "O" into the box below and hit enter for OPTIONS</p>
         </div>
     </div>
     <div id="optionsScreen" class="screen">
         <h1>OPTIONS</h1>
         <div id="notPossibleMessage">
             <p>Not Possible!</p>
+        </div>
+        <div>
+            <button id="easy" class="operationBtn" onclick="selectDifficulty('easy')">Easy</button>
+            <button id="medium" class="operationBtn selected" onclick="selectDifficulty('medium')">Medium</button>
+            <button id="hard" class="operationBtn" onclick="selectDifficulty('hard')">Hard</button>
         </div>
         <div>
             <button id="additionBtn" class="operationBtn" onclick="selectOption('additionBtn')">Addition</button>
@@ -38,10 +43,10 @@
         <div class="center">
             <div id="additionOptions" class="specificOptions">
                 <label for="digitsX">Number of digits for first number</label>
-                <input onclick="negcheck()" class="numInput" id="digitsX" type="number" value="3" min="1" max="5">
+                <input onclick="negcheck()" class="numInput" id="digitsX" type="number" value="2" min="1" max="5">
                 <br>
                 <label for="digitsY">Number of digits for second number</label>
-                <input onclick="negcheck()" class="numInput" id="digitsY" type="number" value="3" min="1" max="5">
+                <input onclick="negcheck()" class="numInput" id="digitsY" type="number" value="1" min="1" max="5">
                 <div id="subtractionOptions">
                     <label for="negativeAllowed">Negative answers allowed?</label>
                     <input onclick="negcheck(true)" type="checkbox" id="negativeAllowed">
@@ -50,17 +55,16 @@
             <div id="multiplicationOptions" class="specificOptions">
                 <label for="specificTimesTableCheck">Practise specific times table?</label>
                 <input onclick="chooseTimesTable()" id="specificTimesTableCheck" type="checkbox">
-                <br>
                 <div class="center">
                     <label id="timesTableLabel" for="timesTable">Times Table&nbsp;</label>
                     <input class="numInput" id="timesTable" type="number" value="2" min="2" max="100">
                 </div>
-                <br>
+                <!--<br>-->
                 <div class="center">
                     <label for="limitX">Limit first number used&nbsp;</label>
                     <input class="numInput" id="limitX" type="number" value="12" min="3" max="100">
                 </div>
-                <br>
+                <!--<br>-->
                 <div class="center">
                     <label id="limitYLabel" for="limitY">Limit second number used&nbsp;</label>
                     <input class="numInput" id="limitY" type="number" value="12" min="3" max="100">
@@ -68,7 +72,7 @@
             </div>
         </div>
         <div>
-            <p id="startInstruction">Type 'start' into the input field to begin</p>
+            <p id="startInstruction">Type "S" into the input field to begin</p>
         </div>
     </div>
     <div id="deathScreen" class="screen">
@@ -93,7 +97,7 @@
     <script src="userSubmit.js"></script>
     <script src="transitions.js"></script>
     <script src="hills.js"></script>
-    <script src="game.js"></script>
+    <script src="setting.js"></script>
     <script src="spikes.js"></script>
     <script src="calculatePoints.js"></script>
     <script src="question.js"></script>
