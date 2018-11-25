@@ -1,0 +1,21 @@
+{
+  "name": "jc-maths-games",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^4.7.2",
+    "mongodb": "^2.2.14",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "shortid": "^2.2.6",
+    "object-hash": "^1.3.0"
+  },
+  "engines": {
+    "node": "6.9.1"
+  },
+  "license": "MIT"
+}
