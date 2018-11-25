@@ -2,7 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69556dd2-92ed-4679-92bd-8a5825ee7a0f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/calculatePoints.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/character.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/escapeSpikeSketch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/escapeSpikesStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/hills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/question.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/setting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/spikes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/roof.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/stoneBricks.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile146.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile147.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile148.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile149.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile151.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile260.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile261.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile262.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile263.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile264.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tile265.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/sprites/victory.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/transitions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/userSubmit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Griffy/Griffy-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Griffy/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Raleway/Raleway-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Spicy_Rice/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Spicy_Rice/SpicyRice-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gameStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meteorBlaster/ast1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meteorBlaster/ast2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meteorBlaster/ast3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meteorBlaster/asteroid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meteorBlaster/mbStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meteorBlaster/meteorBlaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meteorBlaster/meteorBlasterSketch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meteorBlaster/question.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/machine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/numBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/numCrunchSketch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/numberCrunchers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/operatorFunctions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/player.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/grass.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/handgrass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numberCrunchers/rpgSprites/tile011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/p5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shootTheMultiples/bullets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shootTheMultiples/number.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shootTheMultiples/player.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shootTheMultiples/shootMultiples.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shootTheMultiples/shootMultiplesSketch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -82,37 +172,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/escapeTheSpikes/hills.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p5.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171600">
-              <caret line="11440" column="43" selection-start-line="11440" selection-start-column="43" selection-end-line="11440" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -121,7 +184,7 @@
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -131,42 +194,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="10" selection-start-column="10" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/escapeTheSpikes/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/escapeTheSpikes/escapeSpikesStyle.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3015">
-              <caret line="201" column="11" selection-start-line="201" selection-start-column="11" selection-end-line="201" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/escapeTheSpikes/options.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
-              <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/escapeTheSpikes/userSubmit.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -381,18 +408,18 @@
       <workItem from="1542823914444" duration="605000" />
       <workItem from="1542826332110" duration="440000" />
       <workItem from="1542835950641" duration="3016000" />
-      <workItem from="1543161606493" duration="2520000" />
+      <workItem from="1543161606493" duration="2886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99075000" />
+    <option name="totallyTimeSpent" value="99441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25933757" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25933757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -404,7 +431,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010571" side_tool="true" weight="0.39892185" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -648,7 +675,7 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -662,7 +689,7 @@
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
         </state>
       </provider>
     </entry>
