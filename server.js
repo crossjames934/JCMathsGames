@@ -9,3 +9,9 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 console.log("Short ID: " + shortid.generate());
+
+app.use(cors());
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/views/index.html');
+});
