@@ -199,6 +199,16 @@ h2 {
     font-size: 25px;
 }
 
+#gameOver {
+    font-size: 180px;
+    transform: rotate(10deg);
+}
+
+#goLeft {
+    transform: rotate(-10deg);
+
+}
+
 @keyframes appear {
     0% {
         opacity: 0;

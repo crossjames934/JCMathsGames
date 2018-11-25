@@ -36,7 +36,8 @@ function setup() {
     character = character || new Character();
     textSize(30); // change to proportion of window size
     textAlign(CENTER);
-    // transitionToOptions();
+    // transitionToDeath();
+
 }
 
 function draw() {

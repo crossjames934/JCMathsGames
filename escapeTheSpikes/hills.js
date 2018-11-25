@@ -22,9 +22,9 @@ function hills() {
             }
             beginShape();
             for (let j = 0; j < points; j++) {
-                vertex(width / points * j, yHeight[j] * (height / 2) + fractionOfHeight * height);
+                vertex(width / points * j, yHeight[j] * height + fractionOfHeight * height / 2);
             }
-            vertex(width, yHeight[yHeight.length-1] * (height / 2) + fractionOfHeight * height);
+            vertex(width, yHeight[yHeight.length-1] * height + fractionOfHeight * height);
             vertex(width, height);
             vertex(0, height);
             endShape();
