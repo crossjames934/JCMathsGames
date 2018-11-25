@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69556dd2-92ed-4679-92bd-8a5825ee7a0f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/escapeSpikeSketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/escapeTheSpikes/escapeSpikeSketch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/escapeSpikes.html" beforeDir="false" afterPath="$PROJECT_DIR$/escapeTheSpikes/escapeSpikes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/escapeSpikesStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/escapeTheSpikes/escapeSpikesStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/escapeTheSpikes/hills.js" beforeDir="false" afterPath="$PROJECT_DIR$/escapeTheSpikes/hills.js" afterDir="false" />
-    </list>
+    <list default="true" id="69556dd2-92ed-4679-92bd-8a5825ee7a0f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -28,7 +22,7 @@
     <session id="1085440452">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.10" value="2" />
@@ -89,7 +83,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/escapeTheSpikes/hills.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
+            <state relative-caret-position="390">
               <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
             </state>
           </provider>
@@ -281,8 +275,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.escapeSpikes.html">
-    <configuration name="escapeSpikes.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JCMathsGames/escapeTheSpikes/escapeSpikes.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JCMathsGames/escapeTheSpikes/index.html">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JCMathsGames/index.html">
@@ -301,12 +295,12 @@
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.meteorBlaster.html" />
       <item itemvalue="JavaScript Debug.numberCrunchers.html" />
-      <item itemvalue="JavaScript Debug.escapeSpikes.html" />
+      <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.shootMultiples.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.escapeSpikes.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.numberCrunchers.html" />
         <item itemvalue="JavaScript Debug.shootMultiples.html" />
         <item itemvalue="JavaScript Debug.meteorBlaster.html" />
@@ -341,16 +335,15 @@
       <workItem from="1542754973023" duration="54000" />
       <workItem from="1542823914444" duration="605000" />
       <workItem from="1542826332110" duration="440000" />
-      <workItem from="1542835950641" duration="2336000" />
+      <workItem from="1542835950641" duration="3016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95875000" />
+    <option name="totallyTimeSpent" value="96555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25933757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -358,13 +351,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4989429" visible="true" weight="0.39892185" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989429" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010571" side_tool="true" weight="0.39892185" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -600,7 +593,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/escapeTheSpikes/hills.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
+        <state relative-caret-position="390">
           <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
         </state>
       </provider>
